@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هدية إلى حنان ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div id="hearts"></div>
+
+  <main class="container">
+    <section class="screen active" id="screen1">
+      <div class="gift">🎁</div>
+      <p class="small">في هدية صغيرة مستنياكي...</p>
+      <h1>إلى <span>حنان</span> ❤️</h1>
+      <p>جاهزة تفتحيها؟</p>
+      <button onclick="nextScreen(2)">افتحي هديتك ✨</button>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="cake">🎂</div>
+      <h2>كل سنة وإنتِ طيبة يا حنان ❤️</h2>
+      <p class="message">
+        النهارده مش يوم عادي، النهارده يوم مميز جدًا لأنه اليوم اللي اتولدت فيه
+        واحدة غالية على قلبي. أتمنى السنة الجديدة من عمرك تكون مليانة فرحة ونجاح
+        وضحكة حلوة ما تفارقش وشك.
+      </p>
+      <button onclick="nextScreen(3)">كمّلي المفاجأة 💌</button>
+    </section>
+
+    <section class="screen" id="screen3">
+      <div class="photo-frame">
+        <div class="photo-placeholder">📸</div>
+        <p>حطي صورتها هنا لو حابة</p>
+      </div>
+      <h2>رسالة ليكي 💖</h2>
+      <p class="message">
+        حنان، وجودك في حياتي حاجة جميلة بجد. أتمنى أفضل أشوفك دايمًا مبسوطة،
+        وأتمنى كل أمنية نفسك فيها تتحقق. مهما كانت الكلمات بسيطة، فهي طالعة من
+        قلبي عشان أقولك: <strong>كل سنة وإنتِ أجمل وأطيب وأغلى حنان.</strong>
+      </p>
+      <button onclick="nextScreen(4)">آخر مفاجأة 🎉</button>
+    </section>
+
+    <section class="screen" id="screen4">
+      <div class="big-heart">❤️</div>
+      <h2>مفاجأة صغيرة ليكي يا حنان ✨</h2>
+      <p class="final-text">
+        أتمنى عيد ميلادك يكون بداية لسنة أحلى من كل اللي فات،
+        وتفضلي دايمًا مبتسمة ومحققة كل اللي نفسك فيه. 🎂🌷
+      </p>
+      <div class="wish">🎈 🎂 ✨ 💖 ✨ 🎂 🎈</div>
+      <button onclick="makeMagic()">اضغطي هنا للمفاجأة الأخيرة 💕</button>
+      <p id="magic" class="magic"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
